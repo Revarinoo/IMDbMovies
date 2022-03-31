@@ -35,6 +35,9 @@
 		F717399027F5E7CC001696D1 /* MovieDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717398F27F5E7CC001696D1 /* MovieDetailPresenter.swift */; };
 		F717399227F5E7DA001696D1 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717399127F5E7DA001696D1 /* MovieDetailView.swift */; };
 		F717399427F5E806001696D1 /* MovieVideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717399327F5E806001696D1 /* MovieVideoModel.swift */; };
+		F717399827F60A7C001696D1 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717399727F60A7C001696D1 /* RatingView.swift */; };
+		F717399B27F61114001696D1 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717399A27F61114001696D1 /* String+Extensions.swift */; };
+		F717399D27F6123E001696D1 /* ReleaseDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717399C27F6123E001696D1 /* ReleaseDateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +69,9 @@
 		F717398F27F5E7CC001696D1 /* MovieDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailPresenter.swift; sourceTree = "<group>"; };
 		F717399127F5E7DA001696D1 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 		F717399327F5E806001696D1 /* MovieVideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieVideoModel.swift; sourceTree = "<group>"; };
+		F717399727F60A7C001696D1 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		F717399A27F61114001696D1 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		F717399C27F6123E001696D1 /* ReleaseDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseDateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +182,7 @@
 		F717394B27F48393001696D1 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				F717399927F610FA001696D1 /* Extensions */,
 				F717394C27F483A2001696D1 /* ApiManager.swift */,
 				F717394E27F485DB001696D1 /* AppConstants.swift */,
 			);
@@ -195,6 +202,8 @@
 			children = (
 				F717396427F4B2D2001696D1 /* GenreView.swift */,
 				F717397E27F59D20001696D1 /* MovieCardView.swift */,
+				F717399727F60A7C001696D1 /* RatingView.swift */,
+				F717399C27F6123E001696D1 /* ReleaseDateView.swift */,
 			);
 			path = "Functional Views";
 			sourceTree = "<group>";
@@ -322,6 +331,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F717399927F610FA001696D1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F717399A27F61114001696D1 /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -405,11 +422,13 @@
 				F717395A27F48968001696D1 /* MovieGenresModel.swift in Sources */,
 				F717397427F4B92C001696D1 /* MovieListPresenter.swift in Sources */,
 				F717399227F5E7DA001696D1 /* MovieDetailView.swift in Sources */,
+				F717399827F60A7C001696D1 /* RatingView.swift in Sources */,
 				F717398A27F5DB9C001696D1 /* MovieDetailRouter.swift in Sources */,
 				F717395627F48786001696D1 /* HomeViewInteractor.swift in Sources */,
 				F717397027F4B914001696D1 /* MovieListProtocol.swift in Sources */,
 				F717397827F4B94D001696D1 /* MovieListRouter.swift in Sources */,
 				F717393A27F47E57001696D1 /* ContentView.swift in Sources */,
+				F717399B27F61114001696D1 /* String+Extensions.swift in Sources */,
 				F717396E27F4B858001696D1 /* MovieListView.swift in Sources */,
 				F717395427F48772001696D1 /* HomeViewProtocol.swift in Sources */,
 				F717394D27F483A2001696D1 /* ApiManager.swift in Sources */,
@@ -422,6 +441,7 @@
 				F717399427F5E806001696D1 /* MovieVideoModel.swift in Sources */,
 				F717398E27F5E7BC001696D1 /* MovieDetailInteractor.swift in Sources */,
 				F717399027F5E7CC001696D1 /* MovieDetailPresenter.swift in Sources */,
+				F717399D27F6123E001696D1 /* ReleaseDateView.swift in Sources */,
 				F717398C27F5DBF4001696D1 /* MovieDetailProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
