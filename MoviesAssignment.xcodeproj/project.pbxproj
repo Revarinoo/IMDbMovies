@@ -91,6 +91,7 @@
 				F717394B27F48393001696D1 /* Utils */,
 				F717394527F47E62001696D1 /* HomeScreen */,
 				F717396627F4B7ED001696D1 /* MovieListScreen */,
+				F717398027F5DAC0001696D1 /* MovieDetailScreen */,
 				F717393727F47E57001696D1 /* MoviesAssignmentApp.swift */,
 				F717393927F47E57001696D1 /* ContentView.swift */,
 				F717393B27F47E59001696D1 /* Assets.xcassets */,
@@ -244,6 +245,61 @@
 			isa = PBXGroup;
 			children = (
 				F717396D27F4B858001696D1 /* MovieListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F717398027F5DAC0001696D1 /* MovieDetailScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F717398627F5DAF9001696D1 /* View */,
+				F717398527F5DAF4001696D1 /* Protocol */,
+				F717398427F5DAE9001696D1 /* Interactor */,
+				F717398327F5DAE0001696D1 /* Presenter */,
+				F717398227F5DADB001696D1 /* Entity */,
+				F717398127F5DACF001696D1 /* Router */,
+			);
+			path = MovieDetailScreen;
+			sourceTree = "<group>";
+		};
+		F717398127F5DACF001696D1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F717398227F5DADB001696D1 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F717398327F5DAE0001696D1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F717398427F5DAE9001696D1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F717398527F5DAF4001696D1 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		F717398627F5DAF9001696D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = View;
 			sourceTree = "<group>";

@@ -11,7 +11,7 @@ struct MoviesListResponse: Codable {
     let results: [MoviePrimaryInfo]
 }
 
-struct MoviePrimaryInfo: Codable, Identifiable {
+struct MoviePrimaryInfo: Codable, Identifiable, Equatable {
     let id: Int
     let originalTitle: String
     let overview: String

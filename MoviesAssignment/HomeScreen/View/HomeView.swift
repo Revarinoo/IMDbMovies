@@ -18,8 +18,10 @@ struct HomeView: View {
         ScrollView {
             LazyVGrid(columns: columns, spacing: 16, content: {
                 ForEach(presenter.genres, id: \.id) { genre in
-                    NavigationLink(destination: presenter.navigate(for: genre.name)) {
-                        GenreView(name: genre.name)
+                    NavigationLink(destination: presenter.navigate(for: genre.name, id: genre.id)) {
+                        withAnimation {
+                            GenreView(name: genre.name)
+                        }
                     }
                 }
             })
@@ -27,6 +29,7 @@ struct HomeView: View {
             .padding(.top, 20)
         }
         .navigationTitle("Movie Genres")
+        .navigationBarTitleDisplayMode(.automatic)
         .onAppear {
             presenter.getGenres()
         }

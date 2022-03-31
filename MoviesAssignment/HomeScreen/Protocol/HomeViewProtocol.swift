@@ -12,7 +12,7 @@ protocol HomePresenterProtocol: AnyObject {
     var interactor: HomeInteractorProtocol { get set }
     func getGenres()
     associatedtype newView: View
-    func navigate(for category: String) -> newView
+    func navigate(for category: String, id: Int) -> newView
 }
 
 protocol HomeInteractorProtocol: AnyObject {
@@ -24,6 +24,6 @@ protocol HomeInteractorProtocol: AnyObject {
 
 protocol HomeRouterProtocol: AnyObject {
     associatedtype newView: View
-    func goToMovieList(for category: String) -> newView
+    func goToMovieList(for category: String, id: Int) -> newView
     
 }

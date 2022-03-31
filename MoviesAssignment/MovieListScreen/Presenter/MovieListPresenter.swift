@@ -21,8 +21,8 @@ class MovieListPresenter: MovieListPresenterProtocol, ObservableObject {
             .store(in: &cancellables)
     }
     
-    func getMovieInfo(for category: String, page: Int) {
-        interactor.fetchMoviePrimaryInfo(for: category, page: page)
+    func getMovieInfo(for categoryId: Int, page: Int) {
+        interactor.fetchMoviePrimaryInfo(for: categoryId, page: page)
     }
     
 }

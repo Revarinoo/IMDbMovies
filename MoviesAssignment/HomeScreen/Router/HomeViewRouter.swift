@@ -9,8 +9,8 @@ import SwiftUI
 
 class HomeViewRouter: HomeRouterProtocol {
     
-    func goToMovieList(for category: String) -> some View {
+    func goToMovieList(for category: String, id: Int) -> some View {
         let presenter = MovieListPresenter(interactor: MovieListInteractor(movies: []), movies: [])
-        return MovieListView(presenter: presenter, category: category)
+        return MovieListView(presenter: presenter, category: category, genreId: id)
     }
 }

@@ -28,8 +28,8 @@ class HomeViewPresenter: HomePresenterProtocol, ObservableObject {
         interactor.fetchGenresFromServer()
     }
     
-    func navigate(for category: String) -> some View {
-        router?.goToMovieList(for: category)
+    func navigate(for category: String, id: Int) -> some View {
+        router?.goToMovieList(for: category, id: id)
     }
     
 }

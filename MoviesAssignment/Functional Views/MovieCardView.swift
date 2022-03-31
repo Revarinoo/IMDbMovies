@@ -13,16 +13,18 @@ struct MovieCardView: View {
     var title: String
     
     var body: some View {
-        VStack (spacing: 16) {
+        VStack (spacing: 26) {
             WebImage(url: URL(string: AppConstants.baseImageURL + imageURL))
                 .resizable()
                 .scaledToFill()
+                .frame(width: 160, height: 200)
             Text(title)
                 .font(.system(size: 18, weight: .medium, design: .rounded))
                 .foregroundColor(Color(AppConstants.defaultColor))
                 .frame(width: 180 - 32, height: 45)
         }
         .padding(.bottom, 16)
+        .frame(width: 160)
         .background(.white)
         .cornerRadius(12)
         .shadow(color: .gray.opacity(0.4), radius: 4, x: 1, y: 1)

@@ -10,14 +10,14 @@ import Foundation
 protocol MovieListPresenterProtocol: AnyObject {
     var interactor: MovieListInteractorProtocol { get set }
     var movies: [MoviePrimaryInfo] { get set }
-    func getMovieInfo(for category: String, page: Int)
+    func getMovieInfo(for categoryId: Int, page: Int)
 }
 
 protocol MovieListInteractorProtocol: AnyObject {
     var movies: [MoviePrimaryInfo] { get set }
     var moviesPublished: Published<[MoviePrimaryInfo]> { get }
     var moviesPublisher: Published<[MoviePrimaryInfo]>.Publisher { get }
-    func fetchMoviePrimaryInfo(for category: String, page: Int)
+    func fetchMoviePrimaryInfo(for categoryId: Int, page: Int)
 }
 
 protocol MovieListRouterProtocol: AnyObject {

@@ -16,8 +16,8 @@ class MovieListInteractor: MovieListInteractorProtocol {
         self.movies = movies
     }
     
-    func fetchMoviePrimaryInfo(for category: String, page: Int) {
-        guard let url = URL(string: AppConstants.baseURL + "discover/movie" + AppConstants.apiKey + "&with_genres=\(category)&page=\(page)") else {
+    func fetchMoviePrimaryInfo(for categoryId: Int, page: Int) {
+        guard let url = URL(string: AppConstants.baseURL + "discover/movie" + AppConstants.apiKey + "&with_genres=\(categoryId)&page=\(page)") else {
             return
         }
         let urlRequest = URLRequest(url: url)
