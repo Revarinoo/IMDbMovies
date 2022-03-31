@@ -7,6 +7,10 @@
 
 import Foundation
 
+struct MovieReviewResponse: Codable {
+    let results: [MovieReview]
+}
+
 struct MovieReview: Codable, Identifiable {
     let id: String
     let authorDetail: Author

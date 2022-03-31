@@ -5,12 +5,14 @@
 //  Created by Revarino Putra on 30/03/22.
 //
 
-import Foundation
+import SwiftUI
 
 protocol MovieListPresenterProtocol: AnyObject {
     var interactor: MovieListInteractorProtocol { get set }
     var movies: [MoviePrimaryInfo] { get set }
     func getMovieInfo(for categoryId: Int, page: Int)
+//    associatedtype newView: View
+//    func navigate(for movieId: Int, info movieInfo: MoviePrimaryInfo) -> newView
 }
 
 protocol MovieListInteractorProtocol: AnyObject {
@@ -21,5 +23,6 @@ protocol MovieListInteractorProtocol: AnyObject {
 }
 
 protocol MovieListRouterProtocol: AnyObject {
-    
+    associatedtype newView: View
+    func goToMovieDetail(for movieId: Int, info movieInfo: MoviePrimaryInfo) -> newView
 }
