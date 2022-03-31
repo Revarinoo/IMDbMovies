@@ -22,14 +22,16 @@ struct MovieListView: View {
         ScrollView (.vertical, showsIndicators: false) {
             LazyVGrid(columns: column, spacing: 20) {
                 ForEach(presenter.movies, id: \.id) { data in
-                    MovieCardView(imageURL: data.imagePath, title: data.originalTitle)
-                        .onAppear {
-                            let index = presenter.movies.firstIndex(of: data)
-                            if index == presenter.movies.count - 2 {
-                                presenter.getMovieInfo(for: genreId, page: nextPage)
-                                nextPage += 1
+                    NavigationLink(destination: presenter.navigate(info: data)) {
+                        MovieCardView(imageURL: data.imagePath, title: data.originalTitle)
+                            .onAppear {
+                                let index = presenter.movies.firstIndex(of: data)
+                                if index == presenter.movies.count - 2 {
+                                    presenter.getMovieInfo(for: genreId, page: nextPage)
+                                    nextPage += 1
+                                }
                             }
-                        }
+                    }
                 }
             }
             .padding([.leading, .trailing], 16)

@@ -6,16 +6,18 @@
 //
 
 import Combine
+import SwiftUI
 
 class MovieListPresenter: MovieListPresenterProtocol, ObservableObject {
     var interactor: MovieListInteractorProtocol
     @Published var movies: [MoviePrimaryInfo] = []
     private var cancellables = Set<AnyCancellable>()
-//    var router: MovieLis
+    var router: MovieListRouter
     
     required init(interactor: MovieListInteractorProtocol, movies: [MoviePrimaryInfo]) {
         self.interactor = interactor
         self.movies = movies
+        self.router = MovieListRouter()
         
         interactor.moviesPublisher
             .assign(to: \.movies, on: self)
@@ -26,8 +28,8 @@ class MovieListPresenter: MovieListPresenterProtocol, ObservableObject {
         interactor.fetchMoviePrimaryInfo(for: categoryId, page: page)
     }
     
-//    func navigate(for movieId: Int, info movieInfo: MoviePrimaryInfo) -> some View {
-//        <#code#>
-//    }
+    func navigate(info movieInfo: MoviePrimaryInfo) -> some View {
+        return router.goToMovieDetail(info: movieInfo)
+    }
     
 }

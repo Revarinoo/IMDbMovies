@@ -5,11 +5,11 @@
 //  Created by Revarino Putra on 30/03/22.
 //
 
-import Foundation
+import SwiftUI
 
-//class MovieListRouter: MovieListRouterProtocol {
-//    
-//    func goToMovieDetail(for movieId: Int, info movieInfo: MoviePrimaryInfo) -> some View {
-//        <#code#>
-//    }
-//}
+class MovieListRouter: MovieListRouterProtocol {
+    
+    func goToMovieDetail(info movieInfo: MoviePrimaryInfo) -> some View {
+        return MovieDetailView(movieInfo: movieInfo, presenter: MovieDetailPresenter(interactor: MovieDetailInteractor(reviews: [], videos: [])))
+    }
+}
