@@ -48,7 +48,7 @@ class MovieDetailInteractor: MovieDetailInteractorProtocol {
                 return
             }
             DispatchQueue.main.async {
-                self.videos = result.results
+                self.videos = result.results.filter { $0.name.contains("Trailer") }
             }
         }
     }

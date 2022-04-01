@@ -38,6 +38,7 @@
 		F717399827F60A7C001696D1 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717399727F60A7C001696D1 /* RatingView.swift */; };
 		F717399B27F61114001696D1 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717399A27F61114001696D1 /* String+Extensions.swift */; };
 		F717399D27F6123E001696D1 /* ReleaseDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717399C27F6123E001696D1 /* ReleaseDateView.swift */; };
+		F717399F27F6A23E001696D1 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717399E27F6A23E001696D1 /* SafariView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		F717399727F60A7C001696D1 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		F717399A27F61114001696D1 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		F717399C27F6123E001696D1 /* ReleaseDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseDateView.swift; sourceTree = "<group>"; };
+		F717399E27F6A23E001696D1 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 				F717397E27F59D20001696D1 /* MovieCardView.swift */,
 				F717399727F60A7C001696D1 /* RatingView.swift */,
 				F717399C27F6123E001696D1 /* ReleaseDateView.swift */,
+				F717399E27F6A23E001696D1 /* SafariView.swift */,
 			);
 			path = "Functional Views";
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				F717393A27F47E57001696D1 /* ContentView.swift in Sources */,
 				F717399B27F61114001696D1 /* String+Extensions.swift in Sources */,
 				F717396E27F4B858001696D1 /* MovieListView.swift in Sources */,
+				F717399F27F6A23E001696D1 /* SafariView.swift in Sources */,
 				F717395427F48772001696D1 /* HomeViewProtocol.swift in Sources */,
 				F717394D27F483A2001696D1 /* ApiManager.swift in Sources */,
 				F717393827F47E57001696D1 /* MoviesAssignmentApp.swift in Sources */,
