@@ -14,6 +14,7 @@ struct AppConstants {
     
     static let baseImageURL = "https://image.tmdb.org/t/p/original"
     static let baseVideoURL = "https://www.youtube.com/watch?v="
+    static let baseAvatarURL = "https://www.gravatar.com/avatar"
     
     static let defaultColor = "defaultColor"
 }

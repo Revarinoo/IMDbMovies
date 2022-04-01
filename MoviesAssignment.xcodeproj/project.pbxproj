@@ -39,6 +39,7 @@
 		F717399B27F61114001696D1 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717399A27F61114001696D1 /* String+Extensions.swift */; };
 		F717399D27F6123E001696D1 /* ReleaseDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717399C27F6123E001696D1 /* ReleaseDateView.swift */; };
 		F717399F27F6A23E001696D1 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717399E27F6A23E001696D1 /* SafariView.swift */; };
+		F71739A127F6E69A001696D1 /* ReviewListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71739A027F6E69A001696D1 /* ReviewListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		F717399A27F61114001696D1 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		F717399C27F6123E001696D1 /* ReleaseDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseDateView.swift; sourceTree = "<group>"; };
 		F717399E27F6A23E001696D1 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		F71739A027F6E69A001696D1 /* ReviewListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -329,6 +331,7 @@
 		F717398627F5DAF9001696D1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F71739A027F6E69A001696D1 /* ReviewListView.swift */,
 				F717399127F5E7DA001696D1 /* MovieDetailView.swift */,
 			);
 			path = View;
@@ -422,6 +425,7 @@
 				F717396227F49784001696D1 /* HomeViewRouter.swift in Sources */,
 				F717397227F4B921001696D1 /* MovieListInteractor.swift in Sources */,
 				F717396027F49515001696D1 /* HomeView.swift in Sources */,
+				F71739A127F6E69A001696D1 /* ReviewListView.swift in Sources */,
 				F717395A27F48968001696D1 /* MovieGenresModel.swift in Sources */,
 				F717397427F4B92C001696D1 /* MovieListPresenter.swift in Sources */,
 				F717399227F5E7DA001696D1 /* MovieDetailView.swift in Sources */,

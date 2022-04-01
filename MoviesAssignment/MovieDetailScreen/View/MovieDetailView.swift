@@ -13,6 +13,7 @@ struct MovieDetailView: View {
     @StateObject var presenter: MovieDetailPresenter
     @State var selectedVideo = ""
     @State private var isPresentVideo = false
+    @State var isPresentReview = false
     
     var body: some View {
         ScrollView {
@@ -41,7 +42,17 @@ struct MovieDetailView: View {
                         
                 }
                 .padding([.leading, .top], 20)
-                
+                Button {
+                    self.isPresentReview = true
+                } label: {
+                    Text("See Review")
+                        .foregroundColor(.white)
+                        .padding(10)
+                        .background(.blue)
+                        .cornerRadius(10)
+                }
+                .padding(.leading, 18)
+                .padding(.top, 8)
                 VStack (alignment: .leading) {
                     Text("Trailer")
                         .font(.title2)
@@ -81,6 +92,9 @@ struct MovieDetailView: View {
             })
             .sheet(isPresented: $isPresentVideo, content: {
                 SafariView(key: selectedVideo)
+            })
+            .sheet(isPresented: $isPresentReview, content: {
+                ReviewListView(presenter: presenter, movieId: movieInfo.id, isShowPage: $isPresentReview)
             })
         .navigationBarTitleDisplayMode(.inline)
         }

@@ -14,7 +14,7 @@ struct ReleaseDateView: View {
             Text("Release Date")
                 .font(.system(size: 14, weight: .bold, design: .rounded))
                 .foregroundColor(.gray)
-            Text(relaseDate.convertToNewFormat())
+            Text(relaseDate.convertToNewFormat(from: "YYYY-MM-dd"))
                 .font(.system(size: 20, weight: .bold, design: .rounded))
         }
         .padding(10)
